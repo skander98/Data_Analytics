@@ -27,8 +27,8 @@ class BaseData(data.Dataset):
     def __init__(self, args):
         super(BaseData, self).__init__()
         self.crop_size = args.crop_size
-        self.file_path = '/user/guoxia11/cvlshare/cvl-guoxia11/IMDL/REAL'
-        self.file_path_fake = '/user/guoxia11/cvlshare/cvl-guoxia11/IMDL/FAKE'     
+        self.file_path = '/content/Data_Analytic/HiFi_IFDL/data_dir/CASIA2/Au'
+        self.file_path_fake = '/content/Data_Analytic/HiFi_IFDL/data_dir/CASIA2/Tp'     
 
         # Real and Fake images.
         self.image_names = []
