@@ -143,11 +143,11 @@ def main(args):
 
     ## load FENet and SegNet weight:
     if args.loss_type == 'ce':
-        FENet  = restore_weight_helper(FENet,  "weights/HRNet",  750001)
-        SegNet = restore_weight_helper(SegNet, "weights/NLCDetection", 750001)    
+        FENet  = restore_weight_helper(FENet,  "Data_Analytic/HiFi_IFDL/weights/HRNet",  750001)
+        SegNet = restore_weight_helper(SegNet, "Data_Analytic/HiFi_IFDL/weights/NLCDetection", 750001)    
     elif args.loss_type == 'dm':
-        FENet  = restore_weight_helper(FENet,  "weights/HRNet",  750001)
-        SegNet = restore_weight_helper(SegNet, "weights/NLCDetection", 750001)
+        FENet  = restore_weight_helper(FENet,  "Data_Analytic/HiFi_IFDL/weights/HRNet",  750001)
+        SegNet = restore_weight_helper(SegNet, "Data_Analytic/HiFi_IFDL/weights/NLCDetection", 750001)
     else:
         raise ValueError
 
